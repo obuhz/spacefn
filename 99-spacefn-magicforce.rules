@@ -1,0 +1,5 @@
+ACTION=="add", SUBSYSTEM=="usb", ENV{ID_SERIAL}=="HOLDCHIP_USB_Gaming_Keyboard", SYMLINK+="magicforce68" 
+ACTION=="bind", SUBSYSTEM=="usb", ENV{ID_SERIAL}=="HOLDCHIP_USB_Gaming_Keyboard", SYMLINK+="magicforce68" 
+ACTION=="add", SUBSYSTEM=="usb", ENV{ID_SERIAL}=="HOLDCHIP_USB_Gaming_Keyboard", RUN+="/bin/systemctl --no-block start magicforce68.service" 
+ACTION=="bind", SUBSYSTEM=="usb", ENV{ID_SERIAL}=="HOLDCHIP_USB_Gaming_Keyboard", RUN+="/bin/systemctl --no-block start magicforce68.service" 
+

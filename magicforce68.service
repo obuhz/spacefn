@@ -1,0 +1,7 @@
+[Unit]
+Description=MagicForce 68 Keyboard spacefn service
+
+[Service]
+Type=simple
+ExecStart=/opt/spacefn/spacefn /opt/spacefn/mf68.cfg
+
